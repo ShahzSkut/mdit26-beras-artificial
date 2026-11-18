@@ -1,0 +1,27 @@
+# Python environments and generated files
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter local state
+.ipynb_checkpoints/
+
+# Power BI local/cache files (keep the project report)
+*.pbit
+*.pbix
+!dashboard/zakat_simulator.pbix
+**/AnalysisServicesWorkspaces/
+**/Cache*
+**/TempSaves/
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
