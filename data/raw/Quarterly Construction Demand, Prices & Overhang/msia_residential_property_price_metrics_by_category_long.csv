@@ -1,0 +1,64 @@
+﻿Category,Measure Names,Measure Values
+Town Houses,Sample Size,123
+Terraced House,Sample Size,6857
+Semi-Detached House,Sample Size,1525
+Low-Cost House,Sample Size,1447
+Low-Cost Flat,Sample Size,745
+Flat,Sample Size,591
+Detached House,Sample Size,1612
+Condominium/Apartment,Sample Size,1924
+Cluster House,Sample Size,192
+Town Houses,Maximum,1632800
+Terraced House,Maximum,4450000
+Semi-Detached House,Maximum,5000000
+Low-Cost House,Maximum,1700000
+Low-Cost Flat,Maximum,400000
+Flat,Maximum,2330000
+Detached House,Maximum,17670000
+Condominium/Apartment,Maximum,9900000
+Cluster House,Maximum,3600000
+Town Houses,75 Percentile,467500
+Terraced House,75 Percentile,570000
+Semi-Detached House,75 Percentile,755000
+Low-Cost House,75 Percentile,270000
+Low-Cost Flat,75 Percentile,185000
+Flat,75 Percentile,299500
+Detached House,75 Percentile,580000
+Condominium/Apartment,75 Percentile,540000
+Cluster House,75 Percentile,798500
+Town Houses,Median,330000
+Terraced House,Median,398800
+Semi-Detached House,Median,480000
+Low-Cost House,Median,180000
+Low-Cost Flat,Median,150000
+Flat,Median,220000
+Detached House,Median,380000
+Condominium/Apartment,Median,380000
+Cluster House,Median,429000
+Town Houses,Mean,413052.357723577
+Terraced House,Mean,464571.780078752
+Semi-Detached House,Mean,688591.116721311
+Low-Cost House,Mean,203811.552868003
+Low-Cost Flat,Mean,156012.88590604
+Flat,Mean,230071.404399323
+Detached House,Mean,673169.717121588
+Condominium/Apartment,Mean,530039.246881497
+Cluster House,Mean,613892.635416667
+Town Houses,25 Percentile,175000
+Terraced House,25 Percentile,282800
+Semi-Detached House,25 Percentile,375000
+Low-Cost House,25 Percentile,125500
+Low-Cost Flat,25 Percentile,120000
+Flat,25 Percentile,159500
+Detached House,25 Percentile,210000
+Condominium/Apartment,25 Percentile,280000
+Cluster House,25 Percentile,300000
+Town Houses,Minimum,60000
+Terraced House,Minimum,50000
+Semi-Detached House,Minimum,57000
+Low-Cost House,Minimum,45000
+Low-Cost Flat,Minimum,45000
+Flat,Minimum,45000
+Detached House,Minimum,45000
+Condominium/Apartment,Minimum,50000
+Cluster House,Minimum,50000
