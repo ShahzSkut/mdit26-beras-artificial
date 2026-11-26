@@ -20,46 +20,68 @@ from sklearn.ensemble import RandomForestRegressor, HistGradientBoostingRegresso
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 
 
-# def make_demo_panel(n_periods: int = 84) -> pd.DataFrame:
-#     """Fallback monthly series so you can verify execution before Danish's export arrives."""
-#     rng = np.random.default_rng(42)
-#     dates = pd.date_range("2019-01-01", periods=n_periods, freq="MS")
-
-#     steel_shock = rng.normal(0.003, 0.012, size=n_periods)
-#     cement_shock = rng.normal(0.002, 0.007, size=n_periods)
-#     diesel_shock = rng.normal(0.002, 0.015, size=n_periods)
-#     fx_shock = rng.normal(0.001, 0.009, size=n_periods)
-#     demand_shock = rng.normal(0.002, 0.008, size=n_periods)
-
-#     df = pd.DataFrame({
-#         "date": dates,
-#         "bmci_steel_idx": 100.0 * np.exp(np.cumsum(steel_shock + 0.2 * fx_shock)),
-#         "bmci_cement_idx": 100.0 * np.exp(np.cumsum(cement_shock + 0.15 * diesel_shock)),
-#         "fuel_diesel_price": 2.15 * np.exp(np.cumsum(diesel_shock)),
-#         "usd_myr_rate": 4.15 * np.exp(np.cumsum(fx_shock)),
-#         "construction_demand_proxy": 100.0 * np.exp(np.cumsum(demand_shock)),
-#     })
-
-#     bmci_growth = (
-#         0.002
-#         + 0.35 * pd.Series(steel_shock).shift(1).fillna(0).to_numpy()
-#         + 0.20 * pd.Series(cement_shock).shift(2).fillna(0).to_numpy()
-#         + 0.15 * pd.Series(diesel_shock).shift(1).fillna(0).to_numpy()
-#         + 0.12 * pd.Series(fx_shock).shift(2).fillna(0).to_numpy()
-#         + 0.10 * pd.Series(demand_shock).shift(1).fillna(0).to_numpy()
-#         + rng.normal(0, 0.003, size=n_periods)
-#     )
-#     df["bmci_total_idx"] = 100.0 * np.exp(np.cumsum(bmci_growth))
-#     return df
+DEFAULT_PANEL_PATH = "data/processed/monthly_master.csv"
+DEFAULT_TARGET_COL = "bmci_bld_rc_2_4_storey_flat_roof_incl_steel"
+DEFAULT_DRIVERS = [
+    "fuel_diesel",
+    "fx_myr_per_usd",
+    "bnm_opr_pct",
+    "cpi_overall",
+    "ppi_index",
+]
 
 
-def load_panel(csv_path: str = "data/processed/aligned_monthly_panel.csv") -> pd.DataFrame:
+def make_demo_panel(n_periods: int = 84) -> pd.DataFrame:
+    """Fallback monthly series so you can verify execution before Danish's export arrives."""
+    rng = np.random.default_rng(42)
+    dates = pd.date_range("2019-01-01", periods=n_periods, freq="MS")
+
+    steel_shock = rng.normal(0.003, 0.012, size=n_periods)
+    cement_shock = rng.normal(0.002, 0.007, size=n_periods)
+    diesel_shock = rng.normal(0.002, 0.015, size=n_periods)
+    fx_shock = rng.normal(0.001, 0.009, size=n_periods)
+    demand_shock = rng.normal(0.002, 0.008, size=n_periods)
+
+    df = pd.DataFrame({
+        "date": dates,
+        "bmci_steel_idx": 100.0 * np.exp(np.cumsum(steel_shock + 0.2 * fx_shock)),
+        "bmci_cement_idx": 100.0 * np.exp(np.cumsum(cement_shock + 0.15 * diesel_shock)),
+        "fuel_diesel_price": 2.15 * np.exp(np.cumsum(diesel_shock)),
+        "usd_myr_rate": 4.15 * np.exp(np.cumsum(fx_shock)),
+        "construction_demand_proxy": 100.0 * np.exp(np.cumsum(demand_shock)),
+    })
+
+    bmci_growth = (
+        0.002
+        + 0.35 * pd.Series(steel_shock).shift(1).fillna(0).to_numpy()
+        + 0.20 * pd.Series(cement_shock).shift(2).fillna(0).to_numpy()
+        + 0.15 * pd.Series(diesel_shock).shift(1).fillna(0).to_numpy()
+        + 0.12 * pd.Series(fx_shock).shift(2).fillna(0).to_numpy()
+        + 0.10 * pd.Series(demand_shock).shift(1).fillna(0).to_numpy()
+        + rng.normal(0, 0.003, size=n_periods)
+    )
+    df["bmci_total_idx"] = 100.0 * np.exp(np.cumsum(bmci_growth))
+    return df
+
+
+def load_panel(
+    csv_path: str = DEFAULT_PANEL_PATH,
+    max_date: str = "2026-10-01",
+) -> pd.DataFrame:
     path = Path(csv_path)
     if path.exists():
         df = pd.read_csv(path)
-        date_col = "date" if "date" in df.columns else df.columns[0]
+        date_col = (
+            "date" if "date" in df.columns
+            else "month" if "month" in df.columns
+            else df.columns[0]
+        )
+        df = df.copy()
         df["date"] = pd.to_datetime(df[date_col])
-        return df.sort_values("date").reset_index(drop=True)
+        df = df.sort_values("date")
+        if max_date:
+            df = df[df["date"] <= pd.to_datetime(max_date)]
+        return df.reset_index(drop=True)
     print(f"[INFO] '{csv_path}' not found yet. Using synthetic fallback for dry-run.")
     return make_demo_panel()
 
@@ -94,6 +116,7 @@ def run_stationarity_checks(df: pd.DataFrame, cols: list[str]) -> pd.DataFrame:
 def run_var_and_granger(stationary_df: pd.DataFrame, target_col: str, maxlags: int = 4) -> None:
     #Fits a VAR on stationary growth/diff series and prints pairwise Granger p-values
     clean = stationary_df.dropna()
+    print(f"[VAR] rows={len(clean)}, target_col='{target_col}'")
     if len(clean) < maxlags + 15:
         print("[WARN] Too few rows for VAR/Granger check.")
         return
@@ -113,17 +136,17 @@ def run_var_and_granger(stationary_df: pd.DataFrame, target_col: str, maxlags: i
         return
 
     print(f"\n[Granger Causality -> '{target_d1}'] (maxlag={best_lag})")
-    with warnings.catch_warnings(), contextlib.redirect_stdout(io.StringIO()):
-        warnings.simplefilter("ignore")
-        for col in clean.columns:
-            if col == target_d1:
-                continue
+    for col in clean.columns:
+        if col == target_d1:
+            continue
+        with warnings.catch_warnings(), contextlib.redirect_stdout(io.StringIO()):
+            warnings.simplefilter("ignore")
             res = grangercausalitytests(clean[[target_d1, col]], maxlag=best_lag)
-            p_vals = {
-                f"lag_{l}": round(float(res[l][0]["ssr_ftest"][1]), 4)
-                for l in range(1, best_lag + 1)
-            }
-            print(f"  {col} -> {target_d1}: {p_vals}")
+        p_vals = {
+            f"lag_{l}": round(float(res[l][0]["ssr_ftest"][1]), 4)
+            for l in range(1, best_lag + 1)
+        }
+        print(f"  {col} -> {target_d1}: {p_vals}")
 
 
 def build_lag_features(df: pd.DataFrame, cols: list[str], lags: list[int] = [1, 2, 3]) -> pd.DataFrame:
@@ -149,6 +172,7 @@ def evaluate_time_series_models(feat_df: pd.DataFrame, target_col: str) -> pd.Da
     data = feat_df[feature_cols].copy()
     data["y_next"] = target_next
     data = data.dropna()
+    print(f"[ML] rows={len(data)}, target_col='{target_col}'")
 
     X = data[feature_cols].to_numpy()
     y = data["y_next"].to_numpy()
@@ -178,15 +202,20 @@ def evaluate_time_series_models(feat_df: pd.DataFrame, target_col: str) -> pd.Da
 
 def main() -> None:
     df = load_panel()
-    numeric_cols = [c for c in df.columns if c != "date" and pd.api.types.is_numeric_dtype(df[c])]
-    target_col = "bmci_total_idx" if "bmci_total_idx" in numeric_cols else numeric_cols[-1]
+    selected_cols = [
+        c for c in [DEFAULT_TARGET_COL, *DEFAULT_DRIVERS]
+        if c in df.columns and pd.api.types.is_numeric_dtype(df[c])
+    ]
+    if not selected_cols:
+        raise ValueError("The panel contains no numeric target or driver columns.")
+    target_col = DEFAULT_TARGET_COL if DEFAULT_TARGET_COL in selected_cols else selected_cols[0]
 
     print("=== 1. Stationarity Diagnostics ===")
-    stat_summary = run_stationarity_checks(df, numeric_cols)
+    stat_summary = run_stationarity_checks(df, selected_cols)
     print(stat_summary.to_string(index=False))
 
-    feat_df = build_lag_features(df, numeric_cols, lags=[1, 2, 3])
-    d1_cols = [f"{c}_d1" for c in numeric_cols]
+    feat_df = build_lag_features(df, selected_cols, lags=[1, 2, 3])
+    d1_cols = [f"{c}_d1" for c in selected_cols]
 
     print("\n=== 2. VAR & Granger Causality on First-Differenced / Growth Series ===")
     run_var_and_granger(feat_df[d1_cols], target_col=target_col, maxlags=3)
@@ -194,6 +223,12 @@ def main() -> None:
     print("\n=== 3. TimeSeriesSplit AI/ML Baselines (Predicting Next-Period BMCI Change) ===")
     ml_summary = evaluate_time_series_models(feat_df, target_col=target_col)
     print(ml_summary.to_string(index=False))
+
+    output_dir = Path("outputs")
+    output_dir.mkdir(parents=True, exist_ok=True)
+    stat_summary.to_csv(output_dir / "stationarity_summary.csv", index=False)
+    ml_summary.to_csv(output_dir / "ml_model_comparison.csv", index=False)
+    print(f"\n[INFO] Summary tables saved to '{output_dir}'.")
 
 
 if __name__ == "__main__":
