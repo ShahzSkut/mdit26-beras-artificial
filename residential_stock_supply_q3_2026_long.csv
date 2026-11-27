@@ -1,0 +1,111 @@
+review_period,state,development_stage,notes,row_total_units,property_type,units
+Q3 2026,Negeri Sembilan,Existing Stock,,327549,single_storey_terrace,113925
+Q3 2026,Negeri Sembilan,Completions,,4702,single_storey_terrace,1774
+Q3 2026,Negeri Sembilan,Incoming Supply,,11549,single_storey_terrace,5324
+Q3 2026,Negeri Sembilan,Starts,,3617,single_storey_terrace,996
+Q3 2026,Negeri Sembilan,Planned Supply,,13763,single_storey_terrace,5166
+Q3 2026,Negeri Sembilan,New Planned Supply,,6948,single_storey_terrace,2708
+Q3 2026,Johor,Existing Stock,,964454,single_storey_terrace,213125
+Q3 2026,Johor,Completions,,10915,single_storey_terrace,1748
+Q3 2026,Johor,Incoming Supply,,37519,single_storey_terrace,6736
+Q3 2026,Johor,Starts,Planned Supply & New Planned Supply rows for Johor clipped at bottom of PDF,8203,single_storey_terrace,1255
+Q3 2026,Negeri Sembilan,Existing Stock,,327549,two_to_three_storey_terrace,89883
+Q3 2026,Negeri Sembilan,Completions,,4702,two_to_three_storey_terrace,2338
+Q3 2026,Negeri Sembilan,Incoming Supply,,11549,two_to_three_storey_terrace,3867
+Q3 2026,Negeri Sembilan,Starts,,3617,two_to_three_storey_terrace,1721
+Q3 2026,Negeri Sembilan,Planned Supply,,13763,two_to_three_storey_terrace,6085
+Q3 2026,Negeri Sembilan,New Planned Supply,,6948,two_to_three_storey_terrace,3091
+Q3 2026,Johor,Existing Stock,,964454,two_to_three_storey_terrace,288763
+Q3 2026,Johor,Completions,,10915,two_to_three_storey_terrace,6169
+Q3 2026,Johor,Incoming Supply,,37519,two_to_three_storey_terrace,19049
+Q3 2026,Johor,Starts,Planned Supply & New Planned Supply rows for Johor clipped at bottom of PDF,8203,two_to_three_storey_terrace,4434
+Q3 2026,Negeri Sembilan,Existing Stock,,327549,single_storey_semi_detach,13072
+Q3 2026,Negeri Sembilan,Completions,,4702,single_storey_semi_detach,66
+Q3 2026,Negeri Sembilan,Incoming Supply,,11549,single_storey_semi_detach,156
+Q3 2026,Negeri Sembilan,Starts,,3617,single_storey_semi_detach,20
+Q3 2026,Negeri Sembilan,Planned Supply,,13763,single_storey_semi_detach,400
+Q3 2026,Negeri Sembilan,New Planned Supply,,6948,single_storey_semi_detach,218
+Q3 2026,Johor,Existing Stock,,964454,single_storey_semi_detach,27980
+Q3 2026,Johor,Completions,,10915,single_storey_semi_detach,267
+Q3 2026,Johor,Incoming Supply,,37519,single_storey_semi_detach,649
+Q3 2026,Johor,Starts,Planned Supply & New Planned Supply rows for Johor clipped at bottom of PDF,8203,single_storey_semi_detach,90
+Q3 2026,Negeri Sembilan,Existing Stock,,327549,two_to_three_storey_semi_detach,8091
+Q3 2026,Negeri Sembilan,Completions,,4702,two_to_three_storey_semi_detach,80
+Q3 2026,Negeri Sembilan,Incoming Supply,,11549,two_to_three_storey_semi_detach,262
+Q3 2026,Negeri Sembilan,Starts,,3617,two_to_three_storey_semi_detach,170
+Q3 2026,Negeri Sembilan,Planned Supply,,13763,two_to_three_storey_semi_detach,608
+Q3 2026,Negeri Sembilan,New Planned Supply,,6948,two_to_three_storey_semi_detach,122
+Q3 2026,Johor,Existing Stock,,964454,two_to_three_storey_semi_detach,28708
+Q3 2026,Johor,Completions,,10915,two_to_three_storey_semi_detach,614
+Q3 2026,Johor,Incoming Supply,,37519,two_to_three_storey_semi_detach,1316
+Q3 2026,Johor,Starts,Planned Supply & New Planned Supply rows for Johor clipped at bottom of PDF,8203,two_to_three_storey_semi_detach,368
+Q3 2026,Negeri Sembilan,Existing Stock,,327549,detach,28266
+Q3 2026,Negeri Sembilan,Completions,,4702,detach,69
+Q3 2026,Negeri Sembilan,Incoming Supply,,11549,detach,174
+Q3 2026,Negeri Sembilan,Starts,,3617,detach,6
+Q3 2026,Negeri Sembilan,Planned Supply,,13763,detach,183
+Q3 2026,Negeri Sembilan,New Planned Supply,,6948,detach,25
+Q3 2026,Johor,Existing Stock,,964454,detach,67160
+Q3 2026,Johor,Completions,,10915,detach,213
+Q3 2026,Johor,Incoming Supply,,37519,detach,496
+Q3 2026,Johor,Starts,Planned Supply & New Planned Supply rows for Johor clipped at bottom of PDF,8203,detach,74
+Q3 2026,Negeri Sembilan,Existing Stock,,327549,town_house,3833
+Q3 2026,Negeri Sembilan,Completions,,4702,town_house,0
+Q3 2026,Negeri Sembilan,Incoming Supply,,11549,town_house,92
+Q3 2026,Negeri Sembilan,Starts,,3617,town_house,0
+Q3 2026,Negeri Sembilan,Planned Supply,,13763,town_house,71
+Q3 2026,Negeri Sembilan,New Planned Supply,,6948,town_house,51
+Q3 2026,Johor,Existing Stock,,964454,town_house,7810
+Q3 2026,Johor,Completions,,10915,town_house,252
+Q3 2026,Johor,Incoming Supply,,37519,town_house,1916
+Q3 2026,Johor,Starts,Planned Supply & New Planned Supply rows for Johor clipped at bottom of PDF,8203,town_house,507
+Q3 2026,Negeri Sembilan,Existing Stock,,327549,cluster,4405
+Q3 2026,Negeri Sembilan,Completions,,4702,cluster,0
+Q3 2026,Negeri Sembilan,Incoming Supply,,11549,cluster,140
+Q3 2026,Negeri Sembilan,Starts,,3617,cluster,140
+Q3 2026,Negeri Sembilan,Planned Supply,,13763,cluster,76
+Q3 2026,Negeri Sembilan,New Planned Supply,,6948,cluster,56
+Q3 2026,Johor,Existing Stock,,964454,cluster,22557
+Q3 2026,Johor,Completions,,10915,cluster,1080
+Q3 2026,Johor,Incoming Supply,,37519,cluster,3235
+Q3 2026,Johor,Starts,Planned Supply & New Planned Supply rows for Johor clipped at bottom of PDF,8203,cluster,600
+Q3 2026,Negeri Sembilan,Existing Stock,,327549,low_cost_house,31908
+Q3 2026,Negeri Sembilan,Completions,,4702,low_cost_house,275
+Q3 2026,Negeri Sembilan,Incoming Supply,,11549,low_cost_house,539
+Q3 2026,Negeri Sembilan,Starts,,3617,low_cost_house,210
+Q3 2026,Negeri Sembilan,Planned Supply,,13763,low_cost_house,724
+Q3 2026,Negeri Sembilan,New Planned Supply,,6948,low_cost_house,327
+Q3 2026,Johor,Existing Stock,,964454,low_cost_house,153242
+Q3 2026,Johor,Completions,,10915,low_cost_house,58
+Q3 2026,Johor,Incoming Supply,,37519,low_cost_house,565
+Q3 2026,Johor,Starts,Planned Supply & New Planned Supply rows for Johor clipped at bottom of PDF,8203,low_cost_house,336
+Q3 2026,Negeri Sembilan,Existing Stock,,327549,low_cost_flat,6393
+Q3 2026,Negeri Sembilan,Completions,,4702,low_cost_flat,0
+Q3 2026,Negeri Sembilan,Incoming Supply,,11549,low_cost_flat,0
+Q3 2026,Negeri Sembilan,Starts,,3617,low_cost_flat,0
+Q3 2026,Negeri Sembilan,Planned Supply,,13763,low_cost_flat,0
+Q3 2026,Negeri Sembilan,New Planned Supply,,6948,low_cost_flat,0
+Q3 2026,Johor,Existing Stock,,964454,low_cost_flat,52726
+Q3 2026,Johor,Completions,,10915,low_cost_flat,339
+Q3 2026,Johor,Incoming Supply,,37519,low_cost_flat,615
+Q3 2026,Johor,Starts,Planned Supply & New Planned Supply rows for Johor clipped at bottom of PDF,8203,low_cost_flat,0
+Q3 2026,Negeri Sembilan,Existing Stock,,327549,flat,8272
+Q3 2026,Negeri Sembilan,Completions,,4702,flat,0
+Q3 2026,Negeri Sembilan,Incoming Supply,,11549,flat,0
+Q3 2026,Negeri Sembilan,Starts,,3617,flat,0
+Q3 2026,Negeri Sembilan,Planned Supply,,13763,flat,0
+Q3 2026,Negeri Sembilan,New Planned Supply,,6948,flat,0
+Q3 2026,Johor,Existing Stock,,964454,flat,30046
+Q3 2026,Johor,Completions,,10915,flat,175
+Q3 2026,Johor,Incoming Supply,,37519,flat,1025
+Q3 2026,Johor,Starts,Planned Supply & New Planned Supply rows for Johor clipped at bottom of PDF,8203,flat,0
+Q3 2026,Negeri Sembilan,Existing Stock,,327549,condominium_apartment,19501
+Q3 2026,Negeri Sembilan,Completions,,4702,condominium_apartment,100
+Q3 2026,Negeri Sembilan,Incoming Supply,,11549,condominium_apartment,995
+Q3 2026,Negeri Sembilan,Starts,,3617,condominium_apartment,354
+Q3 2026,Negeri Sembilan,Planned Supply,,13763,condominium_apartment,450
+Q3 2026,Negeri Sembilan,New Planned Supply,,6948,condominium_apartment,350
+Q3 2026,Johor,Existing Stock,,964454,condominium_apartment,72337
+Q3 2026,Johor,Completions,,10915,condominium_apartment,0
+Q3 2026,Johor,Incoming Supply,,37519,condominium_apartment,1917
+Q3 2026,Johor,Starts,Planned Supply & New Planned Supply rows for Johor clipped at bottom of PDF,8203,condominium_apartment,539

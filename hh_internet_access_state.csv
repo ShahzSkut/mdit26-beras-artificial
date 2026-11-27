@@ -1,0 +1,78 @@
+state,year,strata,hh_internet_access_pct
+Melaka,2019,overall,88.8
+Melaka,2020,overall,93.1
+Melaka,2021,overall,95.1
+Melaka,2022,overall,96.2
+Melaka,2023,overall,96.3
+Melaka,2024,overall,96.8
+Melaka,2025,overall,97.3
+Melaka,2019,urban,89.1
+Melaka,2020,urban,93.2
+Melaka,2021,urban,95.3
+Melaka,2022,urban,96.4
+Melaka,2023,urban,96.5
+Melaka,2024,urban,97
+Melaka,2025,urban,97.5
+Melaka,2019,rural,82.7
+Melaka,2020,rural,91.6
+Melaka,2021,rural,91.6
+Melaka,2022,rural,94.2
+Melaka,2023,rural,94.3
+Melaka,2024,rural,94.6
+Melaka,2025,rural,95.1
+Negeri Sembilan,2019,overall,90.8
+Negeri Sembilan,2020,overall,93.3
+Negeri Sembilan,2021,overall,94.4
+Negeri Sembilan,2022,overall,95.9
+Negeri Sembilan,2023,overall,96
+Negeri Sembilan,2024,overall,96.4
+Negeri Sembilan,2025,overall,97
+Negeri Sembilan,2019,urban,92.5
+Negeri Sembilan,2020,urban,95.8
+Negeri Sembilan,2021,urban,96.3
+Negeri Sembilan,2022,urban,98.2
+Negeri Sembilan,2023,urban,98.3
+Negeri Sembilan,2024,urban,98.7
+Negeri Sembilan,2025,urban,99.2
+Negeri Sembilan,2019,rural,85.2
+Negeri Sembilan,2020,rural,85
+Negeri Sembilan,2021,rural,87.7
+Negeri Sembilan,2022,rural,90.1
+Negeri Sembilan,2023,rural,90.4
+Negeri Sembilan,2024,rural,90.8
+Negeri Sembilan,2025,rural,91.3
+Selangor,2019,overall,95.3
+Selangor,2020,overall,94.6
+Selangor,2021,overall,98.4
+Selangor,2022,overall,99
+Selangor,2023,overall,99.2
+Selangor,2024,overall,99.5
+Selangor,2025,overall,99.6
+Selangor,2019,urban,95.8
+Selangor,2020,urban,94.9
+Selangor,2021,urban,98.6
+Selangor,2022,urban,99.1
+Selangor,2023,urban,99.3
+Selangor,2024,urban,99.6
+Selangor,2025,urban,99.6
+Selangor,2019,rural,87.7
+Selangor,2020,rural,88.9
+Selangor,2021,rural,96.2
+Selangor,2022,rural,96.3
+Selangor,2023,rural,97.4
+Selangor,2024,rural,97.7
+Selangor,2025,rural,97.8
+Kuala Lumpur,2019,overall,94.6
+Kuala Lumpur,2020,overall,98
+Kuala Lumpur,2021,overall,99.8
+Kuala Lumpur,2022,overall,99.8
+Kuala Lumpur,2023,overall,99.8
+Kuala Lumpur,2024,overall,100
+Kuala Lumpur,2025,overall,100
+Kuala Lumpur,2019,urban,94.6
+Kuala Lumpur,2020,urban,98
+Kuala Lumpur,2021,urban,99.8
+Kuala Lumpur,2022,urban,99.8
+Kuala Lumpur,2023,urban,99.8
+Kuala Lumpur,2024,urban,100
+Kuala Lumpur,2025,urban,100

@@ -1,0 +1,128 @@
+category,state,n_sampled,mean_rm,median_rm,p25_rm,p75_rm,low_sample_flag
+Cluster House,Johor,47,1.07244e+06,950000,708000,1.3e+06,False
+Cluster House,Kedah,10,343796,308800,307000,369175,True
+Cluster House,Kelantan,4,155000,155000,105000,205000,True
+Cluster House,Kuala Lumpur,11,358182,290000,260000,330000,True
+Cluster House,Melaka,16,461269,448000,412500,470500,True
+Cluster House,Negeri Sembilan,9,350889,350000,210000,480000,True
+Cluster House,Pahang,1,500000,500000,500000,500000,True
+Cluster House,Perak,37,410845,368800,258000,480000,False
+Cluster House,Pulau Pinang,20,321225,300000,217250,362500,True
+Cluster House,Sabah,6,355833,307500,261250,455000,True
+Cluster House,Selangor,30,813859,650000,365000,1.1898e+06,False
+Cluster House,Terengganu,1,250000,250000,250000,250000,True
+Condominium/Apartment,Johor,174,373819,362500,295750,440000,False
+Condominium/Apartment,Kedah,14,398709,415395,226750,588750,True
+Condominium/Apartment,Kelantan,3,331667,385000,292500,397500,True
+Condominium/Apartment,Kuala Lumpur,523,864075,510000,360000,940000,False
+Condominium/Apartment,Labuan,1,300000,300000,300000,300000,True
+Condominium/Apartment,Melaka,52,226227,202510,130000,330000,False
+Condominium/Apartment,Negeri Sembilan,46,202808,222500,121250,281092,False
+Condominium/Apartment,Pahang,30,324630,310000,241250,350000,False
+Condominium/Apartment,Perak,45,294948,250000,180000,330000,False
+Condominium/Apartment,Pulau Pinang,214,555413,450000,350000,588750,False
+Condominium/Apartment,Putrajaya,2,390000,390000,305000,475000,True
+Condominium/Apartment,Sabah,174,365344,300000,240000,407500,False
+Condominium/Apartment,Sarawak,48,380888,330500,190500,555000,False
+Condominium/Apartment,Selangor,589,422167,350000,285000,450000,False
+Condominium/Apartment,Terengganu,9,190111,175000,80000,300000,True
+Detached House,Johor,150,592635,390000,235000,566600,False
+Detached House,Kedah,73,274001,198000,55000,390000,False
+Detached House,Kelantan,276,409088,400000,327500,470000,False
+Detached House,Kuala Lumpur,42,4.24109e+06,3.416e+06,1.825e+06,5.08625e+06,False
+Detached House,Labuan,4,612500,575000,482500,705000,True
+Detached House,Melaka,55,500055,360000,235000,569000,False
+Detached House,Negeri Sembilan,78,448320,385000,200000,557500,False
+Detached House,Pahang,103,334204,192000,115000,328500,False
+Detached House,Perak,289,307425,205000,130000,330000,False
+Detached House,Perlis,1,450000,450000,450000,450000,True
+Detached House,Pulau Pinang,54,1.41432e+06,942500,329000,1.6195e+06,False
+Detached House,Putrajaya,2,2e+06,2e+06,2e+06,2e+06,True
+Detached House,Sabah,33,1.01742e+06,650000,300000,1.67e+06,False
+Detached House,Sarawak,71,509759,360000,160000,665000,False
+Detached House,Selangor,220,1.29921e+06,700000,437500,1.8925e+06,False
+Detached House,Terengganu,161,376460,380000,269000,459000,False
+Flat,Johor,46,174261,180000,129000,220000,False
+Flat,Kedah,2,95500,95500,75750,115250,True
+Flat,Kuala Lumpur,95,233767,230000,190000,255000,False
+Flat,Labuan,4,176750,178500,167500,187750,True
+Flat,Melaka,12,99583.3,87500,76500,120500,True
+Flat,Negeri Sembilan,3,120000,130000,95000,150000,True
+Flat,Pahang,2,175000,175000,152500,197500,True
+Flat,Perak,5,152400,150000,130000,160000,True
+Flat,Pulau Pinang,229,280500,280000,240000,330000,False
+Flat,Sabah,6,165000,170000,135000,197500,True
+Flat,Sarawak,10,350400,131000,98750,161250,True
+Flat,Selangor,169,193236,180000,130000,230000,False
+Flat,Terengganu,8,99750,84000,75000,116250,True
+Low-Cost Flat,Johor,83,171012,170000,150000,200000,False
+Low-Cost Flat,Kedah,11,135455,140000,95000,165000,True
+Low-Cost Flat,Kelantan,4,142500,125000,110000,157500,True
+Low-Cost Flat,Kuala Lumpur,134,173281,166500,140000,200000,False
+Low-Cost Flat,Melaka,25,112200,110000,93000,140000,True
+Low-Cost Flat,Negeri Sembilan,34,101824,90000,80000,127500,False
+Low-Cost Flat,Pahang,5,86800,63000,63000,100000,True
+Low-Cost Flat,Perak,13,82384.6,67000,58000,85000,True
+Low-Cost Flat,Pulau Pinang,234,168365,160000,130000,210000,False
+Low-Cost Flat,Putrajaya,3,268333,260000,252500,280000,True
+Low-Cost Flat,Sabah,16,162969,160000,119500,192500,True
+Low-Cost Flat,Sarawak,9,134222,95000,85000,210000,True
+Low-Cost Flat,Selangor,166,145699,150000,120000,170000,False
+Low-Cost Flat,Terengganu,8,97500,97500,82500,111000,True
+Low-Cost House,Johor,259,228264,200000,116000,330000,False
+Low-Cost House,Kedah,318,205819,205000,150000,270000,False
+Low-Cost House,Kelantan,23,133696,120000,105000,169000,True
+Low-Cost House,Kuala Lumpur,12,419167,395000,331250,507500,True
+Low-Cost House,Labuan,1,360000,360000,360000,360000,True
+Low-Cost House,Melaka,102,164195,160000,121250,190000,False
+Low-Cost House,Negeri Sembilan,110,151348,130650,96250,195000,False
+Low-Cost House,Pahang,144,127993,131500,72250,170000,False
+Low-Cost House,Perak,155,166826,170000,138000,200000,False
+Low-Cost House,Perlis,15,157933,154000,122500,187500,True
+Low-Cost House,Pulau Pinang,37,359486,300000,200000,335000,False
+Low-Cost House,Sabah,21,229524,250000,180000,300000,True
+Low-Cost House,Sarawak,48,228950,227500,165250,282500,False
+Low-Cost House,Selangor,155,287302,290000,190000,350000,False
+Low-Cost House,Terengganu,47,174106,178000,122000,200000,False
+Semi-Detached House,Johor,178,755087,650000,430000,888667,False
+Semi-Detached House,Kedah,194,446243,400000,350000,490000,False
+Semi-Detached House,Kelantan,59,352353,350000,319000,380000,False
+Semi-Detached House,Kuala Lumpur,29,2.25026e+06,2.22e+06,1e+06,3.2e+06,True
+Semi-Detached House,Labuan,3,640000,610000,600000,665000,True
+Semi-Detached House,Melaka,65,552729,490000,420000,680000,False
+Semi-Detached House,Negeri Sembilan,46,562115,500000,382200,680000,False
+Semi-Detached House,Pahang,121,427469,390000,325000,515000,False
+Semi-Detached House,Perak,186,491123,460000,366250,600000,False
+Semi-Detached House,Perlis,15,393363,390000,355000,419500,True
+Semi-Detached House,Pulau Pinang,86,985418,810000,550000,1.175e+06,False
+Semi-Detached House,Putrajaya,5,2.142e+06,2.56e+06,1.55e+06,2.7e+06,True
+Semi-Detached House,Sabah,55,889618,860000,615000,1.095e+06,False
+Semi-Detached House,Sarawak,97,646807,610000,490000,730000,False
+Semi-Detached House,Selangor,186,1.32272e+06,1.085e+06,702000,1.775e+06,False
+Semi-Detached House,Terengganu,200,386250,380000,343750,425000,False
+Terraced House,Johor,1222,500204,480000,350000,620000,False
+Terraced House,Kedah,390,318285,300000,249250,358750,False
+Terraced House,Kelantan,114,245894,239500,177000,296000,False
+Terraced House,Kuala Lumpur,242,961760,800000,618500,1.15e+06,False
+Terraced House,Labuan,17,416000,420000,350000,475000,True
+Terraced House,Melaka,415,328971,300000,249750,377500,False
+Terraced House,Negeri Sembilan,527,341691,306000,250000,413500,False
+Terraced House,Pahang,370,324870,298000,250000,370000,False
+Terraced House,Perak,971,309401,285000,238400,365000,False
+Terraced House,Perlis,28,320075,280000,246300,356700,True
+Terraced House,Pulau Pinang,264,554666,454000,360000,610000,False
+Terraced House,Putrajaya,6,861667,925000,825000,957500,True
+Terraced House,Sabah,225,457557,410000,330000,530000,False
+Terraced House,Sarawak,315,436300,420000,350000,490000,False
+Terraced House,Selangor,1576,632381,560000,430000,758850,False
+Terraced House,Terengganu,175,271620,270560,230000,312000,False
+Town Houses,Johor,15,339333,330000,275000,380000,True
+Town Houses,Kedah,10,252200,195000,190000,340000,True
+Town Houses,Kuala Lumpur,8,1.1285e+06,1.334e+06,1.0675e+06,1.4125e+06,True
+Town Houses,Melaka,26,158431,160000,123750,170000,True
+Town Houses,Negeri Sembilan,5,203200,210000,186000,230000,True
+Town Houses,Perak,3,385000,280000,277500,440000,True
+Town Houses,Pulau Pinang,15,584333,500000,365000,770000,True
+Town Houses,Sabah,1,330000,330000,330000,330000,True
+Town Houses,Sarawak,5,196200,61000,60000,70000,True
+Town Houses,Selangor,35,508550,400000,355000,522500,False
