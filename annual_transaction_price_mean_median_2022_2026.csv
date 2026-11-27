@@ -1,0 +1,6 @@
+year,mean_price_rm,median_price_rm,is_partial_year
+2022,415484,330000,False
+2023,462550,350000,False
+2024,473569,354780,False
+2025,482691,351820,False
+2026,465050,350000,True
