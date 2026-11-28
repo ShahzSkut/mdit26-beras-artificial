@@ -1,0 +1,11 @@
+review_period,state,development_stage,single_storey_terrace,two_to_three_storey_terrace,single_storey_semi_detach,two_to_three_storey_semi_detach,detach,town_house,cluster,low_cost_house,low_cost_flat,flat,condominium_apartment,notes,row_total_units,source_file
+Q3 2026,Negeri Sembilan,Existing Stock,113925,89883,13072,8091,28266,3833,4405,31908,6393,8272,19501,,327549,Dashboard 3.pdf
+Q3 2026,Negeri Sembilan,Completions,1774,2338,66,80,69,0,0,275,0,0,100,,4702,Dashboard 3.pdf
+Q3 2026,Negeri Sembilan,Incoming Supply,5324,3867,156,262,174,92,140,539,0,0,995,,11549,Dashboard 3.pdf
+Q3 2026,Negeri Sembilan,Starts,996,1721,20,170,6,0,140,210,0,0,354,,3617,Dashboard 3.pdf
+Q3 2026,Negeri Sembilan,Planned Supply,5166,6085,400,608,183,71,76,724,0,0,450,,13763,Dashboard 3.pdf
+Q3 2026,Negeri Sembilan,New Planned Supply,2708,3091,218,122,25,51,56,327,0,0,350,,6948,Dashboard 3.pdf
+Q3 2026,Johor,Existing Stock,213125,288763,27980,28708,67160,7810,22557,153242,52726,30046,72337,,964454,Dashboard 3.pdf
+Q3 2026,Johor,Completions,1748,6169,267,614,213,252,1080,58,339,175,0,,10915,Dashboard 3.pdf
+Q3 2026,Johor,Incoming Supply,6736,19049,649,1316,496,1916,3235,565,615,1025,1917,,37519,Dashboard 3.pdf
+Q3 2026,Johor,Starts,1255,4434,90,368,74,507,600,336,0,0,539,Planned Supply & New Planned Supply rows for Johor clipped at bottom of PDF,8203,Dashboard 3.pdf

@@ -1,0 +1,4 @@
+model,cv_rmse,cv_mae
+Ridge,0.01012,0.00759
+RandomForest,0.00669,0.00523
+HistGBM,0.00643,0.00513
