@@ -1,0 +1,6 @@
+driver,target,lag_1,lag_2
+fuel_diesel_d1,bmci_bld_rc_2_4_storey_flat_roof_incl_steel_d1,0.0382,0.0327
+fx_myr_per_usd_d1,bmci_bld_rc_2_4_storey_flat_roof_incl_steel_d1,0.2308,0.0972
+bnm_opr_pct_d1,bmci_bld_rc_2_4_storey_flat_roof_incl_steel_d1,0.8866,0.767
+cpi_overall_d1,bmci_bld_rc_2_4_storey_flat_roof_incl_steel_d1,0.4421,0.6146
+ppi_index_d1,bmci_bld_rc_2_4_storey_flat_roof_incl_steel_d1,0.0012,0.002
